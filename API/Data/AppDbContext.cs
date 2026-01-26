@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Data
 {
-    public class AppDbContex(DbContextOptions options) : DbContext(options)
+    public class AppDbContext(DbContextOptions options) : DbContext(options)
     {
         public DbSet<AppUser> Users { get; set; }
     }
